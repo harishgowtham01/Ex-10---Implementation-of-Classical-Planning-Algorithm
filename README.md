@@ -10,6 +10,7 @@ Find a plan to reach the goal state
 Print the plan
 
 ### Example - 1
+```
 initial_state = {'A': 'Table', 'B': 'Table'}
 goal_state = {'A': 'B', 'B': 'Table'}
 
@@ -22,7 +23,9 @@ plan = find_plan(initial_state, goal_state, actions)
 print(plan)
 Output:
 ['move_A_to_B']
-Example - 2
+
+### Example - 2
+```
 initial_state = {'A': 'Table', 'B': 'Table', 'C': 'Table'}
 goal_state = {'A': 'B', 'B': 'C', 'C': 'Table'}
 
@@ -36,7 +39,9 @@ plan = find_plan(initial_state, goal_state, actions)
 print(plan)
 Output:
 ['move_A_to_B', 'move_B_to_C']
-PROGRAM
+
+### PROGRAM
+```
     return current_state == goal_state
 def apply_action(current_state, action_effect):
     new_state = current_state.copy()
